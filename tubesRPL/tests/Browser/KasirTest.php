@@ -32,11 +32,11 @@ class KasirTest extends DuskTestCase
                     ->click('a', 'Insert')
                     ->visit('/kasir/create')
                     ->assertSee('Tambah Kasir')
-                    ->type('nama_user', 'kemal')
-                    ->type('email', 'kemla@gmail.com')
-                    ->type('password', '321')
+                    ->type('nama_user', 'nawal')
+                    ->type('email', 'nawal@gmail.com')
+                    ->type('password', '123')
                     ->type('alamat', 'bsd')
-                    ->type('no_tlp', '085966320315')
+                    ->type('no_tlp', '08122222222')
                     ->press('button','Tambah');
         });
     }
