@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Barang extends Model
 {
     use HasFactory;
+
+    public function transaksi()
+    {
+        return $this->hasMany(Transaksi::class);
+    }
 }

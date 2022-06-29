@@ -5,7 +5,11 @@
 @section('content')
 <div class="container" style="margin:20px auto 50px auto">
     <h1 class="text-center">Dashboard</h1>
-    <p class="text-center">Hallo, Selamat Datang ....</p>
+    <h6 class="text-center">Hallo, Selamat Datang di </b>WEBSITE GoodsDept</b></h6>
+    @auth
+    <p class="text-center">HI {{ auth()->user()->nama_user }} !!</p>
+    @endauth
+    
     <div class="col-sm-12" style="margin-top: 70px">
         <div class="row">
             <div class="col-sm-6 text-center" >
