@@ -12,7 +12,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    
                     <th scope="col">Kode Transaksi</th>
                     <th scope="col">Jumlah Barang</th>
                     <th scope="col">Total Harga</th>
@@ -22,7 +22,7 @@
             <tbody>
                 @foreach ($transaksi as $data => $value)
                     <tr>
-                        <th scope="row">1</th>
+                        
                         <td>{{ $data }}</td>
                         <td>{{ $value->sum('jumlah_barang') }}</td>
                         <td>{{ $value->sum('total_harga') }}</td>

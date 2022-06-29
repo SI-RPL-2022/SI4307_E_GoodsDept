@@ -34,7 +34,7 @@ class TransaksiTest extends DuskTestCase
                     ->assertSee('Tambah Transaksi')
                     ->type('nama_barang', 'Ciki')
                     ->type('jumlah_barang', 2)
-                    ->press('Tambah Barang')
+                    ->press('button','Tambah Barang')
                     ->assertSee('Ciki')
                     ->click('a','Print')
                     ->visit('/transaksi')
