@@ -32,7 +32,7 @@
             <textarea class="form-control" name= "deskripsi" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="mb-3">
-            <button type="submit" class="btn btn-primary">Tambah</button>
+            <button type="submit" name="tambah" class="btn btn-primary">Tambah</button>
         </div>
         <br><br><br>
     </form>
