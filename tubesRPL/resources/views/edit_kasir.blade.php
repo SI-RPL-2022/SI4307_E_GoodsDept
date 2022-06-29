@@ -17,7 +17,7 @@
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Password</label>
-            <input type="text" class="form-control" name= "password" id="exampleFormControlInput1" value="{{ $kasir->password }}">
+            <input type="text" class="form-control" name= "password" id="exampleFormControlInput1" value="{{ $kasir->password }}" readonly>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Alamat</label>
