@@ -19,7 +19,7 @@
       <div class="col-lg-4">
         <div class="card mb-4">
           <div class="card-body text-center">
-            <img src="https://cdn-icons.flaticon.com/png/512/552/premium/552721.png?token=exp=1656515950~hmac=faddfe8db557f755d03b4795a95711ee" alt="avatar"
+            <img src="{{asset('assets/user-bw.png')}}" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;">
             <h5 class="my-3">{{ auth()->user()->nama_user }}</h5>
           
