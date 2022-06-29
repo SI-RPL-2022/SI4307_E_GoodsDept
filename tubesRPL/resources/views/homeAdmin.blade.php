@@ -4,12 +4,12 @@
 
 @section('content')
 <div class="container" style="margin:20px auto 50px auto">
-    <h1 class="text-center">Dashboard Admin</h1>
+    <h1 class="text-center">Dashboard</h1>
     <p class="text-center">Hallo, Selamat Datang ....</p>
-    <div class="col-sm-12">
+    <div class="col-sm-12" style="margin-top: 70px">
         <div class="row">
             <div class="col-sm-6 text-center" >
-                <img src="{{ asset('assets/admin.png') }}" style="width: 250px">
+                <img src="{{ asset('assets/market.png') }}" style="width: 250px">
             </div>
             <div class="col-sm-6">
                 <p style="margin-top: 100px">

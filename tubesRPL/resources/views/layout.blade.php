@@ -16,14 +16,30 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="{{asset('assets/logo.png')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Web Kasir
+            GoodsDept
           </a>
 
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            @guest
+            <li><a href="/login" class="nav-link px-2 link-secondary">LOGIN</a></li>
+            @endguest
+
             <li><a href="/homeAdmin" class="nav-link px-2 link-secondary">HOME</a></li>
-            <li><a href="/barang" class="nav-link px-2 link-secondary">BARANG</a></li>
-            <li><a href="" class="nav-link px-2 link-secondary">KASIR</a></li>
-            <li><a href="" class="nav-link px-2 link-secondary">PROFIL</a></li>
+            
+
+            @auth
+              @if (auth()->user()->level == 1)
+                <li><a href="/barang" class="nav-link px-2 link-secondary">BARANG</a></li>
+                <li><a href="/kasir" class="nav-link px-2 link-secondary">KASIR</a></li>
+              @endif
+              <li><a href="" class="nav-link px-2 link-secondary">TRANSAKSI</a></li>
+              <li><a href="/profile" class="nav-link px-2 link-secondary">PROFIL</a></li>
+            @endauth
+                        
+            @auth
+              <li><a href="/logout" class="nav-link px-2 link-secondary">LOGOUT</a></li>
+            @endauth
+            
           </ul>
         </div>
     </nav>
