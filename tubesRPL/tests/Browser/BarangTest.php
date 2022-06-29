@@ -34,11 +34,11 @@ class BarangTest extends DuskTestCase
                     ->assertSee('Tambah Barang')
                     ->type('nama_barang','Kasur')
                     ->type('harga_barang','10000')
-                    ->type('stock','1')
+                    ->attach('foto', storage_path('/app/barang_foto/kasur.jpg'))
+                    ->type('stock','4')
                     ->type('kategori','Kasur')
-                    ->type('deskripsi','Ini kasur');
-                    // ->press('tambah')
-                    // ->visit('/barang'); 
+                    ->type('deskripsi','Ini kasur')
+                    ->press('button','tambah');
         });
     }
 }
