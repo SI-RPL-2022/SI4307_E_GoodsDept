@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-#E7FBFF" style="background-color: #E7FBFF;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/homeAdmin">
             <img src="{{asset('assets/logo.png')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">
             GoodsDept
           </a>
